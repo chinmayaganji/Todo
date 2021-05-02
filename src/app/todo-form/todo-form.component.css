@@ -1,0 +1,7 @@
+.todo-form > input,
+button {
+  height: 30px;
+}
+.todo-form > input {
+  margin-top: 10px;
+}

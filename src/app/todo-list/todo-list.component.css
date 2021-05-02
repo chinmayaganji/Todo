@@ -1,0 +1,14 @@
+.todo-completed {
+  text-decoration: line-through;
+}
+.todo-sec{
+    background-color: yellowgreen;
+}
+.todo {
+  background-color: grey;
+  color: white;
+  text-justify: center;
+  font-size: x-large;
+  border-radius: 6px;
+}
+
