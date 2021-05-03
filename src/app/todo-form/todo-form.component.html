@@ -1,11 +1,12 @@
 <div class="container">
     <div class="row ">
         <div class="col-xs-10 todo-form">
-            <input type="text" [(ngModel)]="name" placeholder="Your Todo...." #name1="ngModel" required>
-            &nbsp;<input type="datetime-local" [(ngModel)]="date" value="currentDate">
-            <!-- &nbsp;<input type="date" value={{dateString}} (click)="dateFun()"> -->
-            &nbsp;<button class="btn btn-primary" (click)="Create()">Create</button>
-
+            <form>
+                <input type="text" [(ngModel)]="name" placeholder="Your Todo...." #name1="ngModel" required>
+                &nbsp;<input type="datetime-local" [(ngModel)]="date" value="currentDate">
+                <!-- &nbsp;<input type="date" value={{dateString}} (click)="dateFun()"> -->
+                &nbsp;<button class="btn btn-primary" (click)="Create()">Create</button>
+            </form>
         </div>
 
     </div>
