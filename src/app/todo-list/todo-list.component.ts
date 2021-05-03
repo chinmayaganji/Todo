@@ -11,11 +11,11 @@ export class TodoListComponent implements OnInit {
 
   ngOnInit(): void {
     this.todos = JSON.parse(localStorage.getItem('todos'));
-    this.todos.forEach((todo) => {
-      if (todo.date != null) {
-        todo.date = new Date(todo.date);
-      }
-    });
+    // this.todos.forEach((todo) => {
+    //   if (todo.date != null) {
+    //     todo.date = new Date(todo.date);
+    //   }
+    // });
   }
   ngOnChanges() {
     //console.log("changs called");
@@ -27,6 +27,7 @@ export class TodoListComponent implements OnInit {
         todo.date = new Date(todo.date);
       }
     });
+
     localStorage.setItem('todos', JSON.stringify(this.todos));
   }
 
@@ -48,7 +49,9 @@ export class TodoListComponent implements OnInit {
     localStorage.setItem('todos', JSON.stringify(this.todos));
   }
   onRemove(id) {
-    this.todos = this.todos.filter((todo)=>todo.id!=id)
+    this.todos = this.todos.filter((todo) => todo.id != id);
     localStorage.setItem('todos', JSON.stringify(this.todos));
   }
+
+  
 }

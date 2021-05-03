@@ -9,8 +9,8 @@
             <div class="col-xs-6">
                 <button (click)="onComplete(todo.id)" class="btn-success btn"><i
                         [ngClass]="todo.status?'bi bi-check2-square':'bi bi-square'"></i></button>&nbsp;
-                <button (click)="onEdit(todo.id)" class="btn-warning btn"><i
-                        class="bi bi-pencil-square"></i></button>&nbsp;
+                <!-- <button (click)="onEdit(todo.id)" class="btn-warning btn"><i
+                        class="bi bi-pencil-square"></i></button>&nbsp; -->
                 <button (click)="onRemove(todo.id)" class="btn-danger btn"><i class="bi bi-trash"></i></button>&nbsp;
                 <span
                     *ngIf="todo.date!==null">{{todo.date.getDate()}}/{{todo.date.getMonth()}}/{{todo.date.getFullYear()}}</span>
@@ -19,5 +19,6 @@
         </div>
         <hr>
     </div>
+
 
 </div>
